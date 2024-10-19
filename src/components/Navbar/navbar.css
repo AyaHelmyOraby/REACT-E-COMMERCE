@@ -1,0 +1,44 @@
+/* navbar.css */
+
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+  
+.navbar-brand {
+    font-size: 2rem; /* Increase brand name font size */
+    font-weight: bold; /* Make brand name bold */
+    color: #343a40; /* Dark color for better visibility */
+}
+  
+.nav-link {
+    color: #343a40; /* Dark color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+  
+.nav-link:hover {
+    color: #0a0a0a; /* Change color on hover */
+}
+  
+.active {
+    color: #000000; /* Color for active link */
+    font-weight: bold; /* Make brand name bold */
+
+}
+  
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; /* Maintain shadow effect */
+}
+  
+.ms-auto {
+    margin-left: auto; /* Align cart icon to the right */
+}
+  
+.d-none {
+    display: none !important; /* Hide element */
+}
+  
+@media (min-width: 992px) { /* Show text on larger screens */
+    .d-lg-inline {
+        display: inline !important;
+    }
+}

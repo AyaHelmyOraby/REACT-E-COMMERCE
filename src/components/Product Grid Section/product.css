@@ -1,0 +1,159 @@
+/* General Styles */
+.product-container {
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none; /* Removes default card border */
+}
+
+.card-shadow {
+  transition: transform 0.2s; /* Transition effect for hover */
+}
+
+.card-shadow:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.card-img-top, .card-image {
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Text Styles */
+.text-truncate {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; /* Truncate long titles */
+}
+
+.text-muted {
+  font-size: 0.9rem; /* Smaller font for category name */
+}
+
+/* Button Styles */
+.create-product-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%; /* Circular button */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s; /* Optional: add transition for hover effect */
+}
+
+.create-product-btn:hover {
+  background-color: #0056b3; /* Optional: change hover effect */
+}
+
+/* Footer Styles */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add some padding to the footer */
+}
+
+.card-footer div:first-child {
+  right: 60px; /* Position for the favorite icon */
+  top: 10px;
+}
+
+.card-footer div:last-child {
+  right: 20px; /* Position for the cart icon */
+  top: 10px;
+}
+
+/* Favorite Icon Styles */
+.favorite-icon {
+  font-size: 1.5rem; /* Default size */
+  transition: color 0.3s ease; /* Smooth color transition */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.favorite-icon:hover {
+  color: red; /* Change color on hover */
+}
+
+.favorite-icon.selected {
+  color: red; /* Filled heart color */
+}
+
+/* Add to Cart Icon Styles */
+.add-to-cart-icon {
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Add some margin for smaller screens */
+  }
+
+  .create-product-btn {
+    font-size: 30px; /* Adjust font size */
+  }
+
+  .favorite-icon, .add-to-cart-icon {
+    font-size: 1.2rem; /* Smaller size on mobile */
+  }
+
+  .card-footer {
+    flex-direction: column; /* Stack buttons on smaller screens */
+  }
+
+  .card-footer button {
+    margin-bottom: 5px; /* Space between buttons */
+  }
+
+
+  /* Additional CSS */
+.text-center {
+  text-align: center;
+}
+
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #6c757d; /* Bootstrap secondary color */
+}
+
+/* Custom light success and danger colors for toast */
+.bg-light-green {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Darker green for text */
+}
+
+.bg-light-red {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Darker red for text */
+}
+.toast-body-custom {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.alert {
+  margin-bottom: 0; /* Remove default margin */
+  padding: 0.5rem 1rem; /* Customize padding */
+  border-radius: 0.25rem; /* Adjust border radius if necessary */
+}
+
+
+
+}

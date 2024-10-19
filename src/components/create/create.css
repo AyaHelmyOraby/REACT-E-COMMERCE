@@ -1,0 +1,22 @@
+.create-product-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .create-product-btn svg {
+    fill: white; /* Optional: change the icon color */
+  }
+  
+  .create-product-btn:hover {
+    background-color: #0056b3; /* Optional: change hover effect */
+  }
+  

@@ -1,0 +1,28 @@
+.product-details-container {
+    padding: 20px;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow to the card */
+  }
+  
+  .product-image {
+    height: 400px;
+    object-fit: contain; /* Ensure the image fits within the card without being cropped */
+  }
+  
+  .product-description {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    width: 45%;
+    margin-right: 10px; /* Add space between buttons */
+  }
+  
